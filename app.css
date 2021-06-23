@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+section .container {
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 20px 75px 20px;
+    box-shadow: 0px 0px 14px #cac6c6b7;
+    position: relative;
+}
+
+section .container h1 {
+    color: #43a047;
+    position: relative;
+    font-size: 2rem;
+}
+
+section .container h1:after,
+section .container h1:before {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #43a047;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+section .container h1:before {
+    width: 90px;
+    bottom: -5px;
+}
+
+section .container p.aya {
+    margin: 5px auto;
+    font-size: 1.5rem;
+}
+
+section .container h2 {
+    font-size: 1rem;
+    margin: 10px auto;
+}
+
+section .container button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: #43a047;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: "Cairo", "sans-serife";
+    cursor: pointer;
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -ms-transition: .2s linear;
+    -o-transition: .2s linear;
+    box-shadow: none;
+}
+
+section .container button:hover {
+    box-shadow: 0px 0px 10px #cac6c6b7;
+    background-color: #fff;
+    border-color: #43a047;
+    color: #43a047;
+}
+
+section .container span {
+    display: inline-block;
+    width: calc(95% / 3);
+    color: #43a047;
+    font-weight: bold;
+}
+
+@media(max-width:680px) {
+    section .container span {
+        display: inline-block;
+        width: calc(95% / 2);
+    }
+}
+
+@media(max-width:470px) {
+    section .container span {
+        display: inline-block;
+        width: calc(95% / 1);
+    }
+}
+
+section>p {
+    font-weight: bold;
+}
+
+section>p a {
+    text-decoration: none;
+    color: #43a047;
+}
+
+section>p a:hover {
+    text-decoration: underline;
+}
+
+section>p a:focus {
+    color: #43a047;
+    text-decoration: underline;
+}
